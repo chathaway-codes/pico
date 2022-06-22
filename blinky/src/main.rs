@@ -95,6 +95,8 @@ fn main() -> ! {
         for j in 0..i + 1 {
             // Prompts for input, and echos it back to the player
             let val = wait_for_input(&input_pins, &mut led_pins);
+            // Give the player a breath to let go of the button
+            delay.delay_ms(50);
             if val != sequence[j] {
                 // player lost; show them how far they got
                 led_pins.iter_mut().for_each(|x| x.set_low().unwrap());
