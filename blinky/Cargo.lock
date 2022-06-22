@@ -58,6 +58,7 @@ dependencies = [
  "cortex-m-rt",
  "embedded-hal",
  "embedded-time",
+ "rand",
  "rp-pico",
 ]
 
@@ -315,6 +316,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f53dc8cf16a769a6f677e09e7ff2cd4be1ea0f48754aac39520536962011de0d"
 dependencies = [
  "proc-macro2",
+]
+
+[[package]]
+name = "rand"
+version = "0.8.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
+dependencies = [
+ "rand_core",
 ]
 
 [[package]]

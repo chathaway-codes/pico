@@ -11,3 +11,4 @@ cortex-m-rt = "0.7"
 rp-pico = "0.4"
 embedded-time = "0.12"
 embedded-hal ="0.2"
+rand = {version = "0.8", default-features = false, features = ["small_rng"]}
